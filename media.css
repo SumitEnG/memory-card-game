@@ -193,7 +193,7 @@
 
 @media screen and (max-width: 499px){
     .box-container{
-        width: 60vw;
+        width: 60%;
     }
     .other-sections {
         width: 60%;
@@ -242,7 +242,7 @@
 
 @media screen and (max-width: 399px){
     .box-container{
-        width: 75vw;
+        width: 75%;
     }
     .other-sections {
         width: 70%;
@@ -259,5 +259,11 @@
     }
     .lost-msg{
         width: 80vw;
+    }
+}
+
+@media screen and (max-width: 339px){
+    .box-container{
+        width: 80%;
     }
 }
