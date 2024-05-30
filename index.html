@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+
+    <div class="main-menu-container">
+        <div class="inside-container">
+            <h1>Memory card game</h1>
+            <p>
+                Welcome to the Memory card game! Where you will put your mind
+                to test by flipping cards in pairs and trying to remember their
+                positions.
+            </p>
+            <p>
+                You can play with three other factors such as timer or points or no of 
+                flips avaible to check your scores! 
+            </p>
+            <div class="playing-btns">
+                <button class="playButton-1">play with timer</button> 
+                <button class="playButton-2">play with points</button> 
+                <button class="playButton-3">play with no. flips available</button> 
+            </div>
+        </div>
+    </div>
+
+    <div class="container-1 container">
+        <div class="box-container">
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-1.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-2.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-3.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-4.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-5.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-6.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-7.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-8.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-1.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-2.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-3.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-4.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-5.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-6.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-7.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-8.png" alt="" class="back-img img-1">
+                </div>
+            </div>
+        </div>
+
+        <div class="timer">
+            <h2>Time Left: </h2>
+            <h2 class="time-left"> 2 min</h2>
+        </div>
+
+        <div class="win-msg winMsgContainer">
+            <div class="heading-msg">
+                <h1>Congratulations!</h1>
+                <p>you won the game</p>
+            </div>
+            <div class="win-btns">
+                <button class="playAgain">play again</button>
+                <button class="backToMainMenu">back to main menu</button>
+            </div>
+        </div>
+
+        <div class="lost-msg lost-msg-1">
+            <div class="heading-msg-lost">
+                <h1>Bad luck!</h1>
+                <p>you lost the game</p>
+            </div>
+            <div class="lost-btns">
+                <button class="tryAgain">try again</button>
+                <button class="goToMenu">back to main menu</button>
+            </div>
+        </div>
+
+        <div class="score-section">
+            <div class="points">
+                <h2>Score</h1>
+                <p class="score">0 sec</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-2 container">
+        <div class="box-container">
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-1.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-2.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-3.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-4.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-5.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-6.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-7.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-8.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-1.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-2.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-3.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-4.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-5.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-6.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-7.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-8.png" alt="" class="back-img img-2">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="win-msg winMsgContainer2">
+            <div class="heading-msg">
+                <h1>Congratulations!</h1>
+                <p>you won the match</p>
+            </div>
+            <div class="win-btns">
+                <button class="playAgain">play again</button>
+                <button class="backToMainMenu">back to main menu</button>
+            </div>
+        </div>
+
+        <div class="score-section">
+            <div class="points">
+                <h2>Score</h1>
+                <p class="score score-2">0</p>
+            </div>
+        </div>
+
+
+        <div class="other-sections">
+            <button class="mainMenuButton">main menu</button>
+            <button class="restartButton">restart</button>
+            <button class="rulesButton">Rules</button>
+        </div>
+
+    </div>
+    
+    <div class="container-3 container">
+        <div class="box-container">
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-1.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-2.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-3.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-4.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-5.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-6.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-7.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-8.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-1.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-2.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-3.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-4.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-5.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-6.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-7.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="front view">
+                    <img src="/assets/playing card back side.jpeg" alt="">
+                </div>
+                <div class="back view">
+                    <img src="/assets/img-8.png" alt="" class="back-img img-3">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="timer flipss">
+            <h2>flips Left: </h2>
+            <h2 class="time-left flip-left"> 25</h2>
+        </div>
+
+        <div class="lost-msg lost-msg-2">
+            <div class="heading-msg-lost">
+                <h1>Bad luck!</h1>
+                <p>you lost the game</p>
+            </div>
+            <div class="lost-btns">
+                <button class="tryAgain">try again</button>
+                <button class="goToMenu">back to main menu</button>
+            </div>
+        </div>
+
+        <div class="win-msg winMsgContainer3">
+            <div class="heading-msg">
+                <h1>Congratulations!</h1>
+                <p>you win the match</p>
+            </div>
+            <div class="win-btns">
+                <button class="playAgain">play again</button>
+                <button class="backToMainMenu">back to main menu</button>
+            </div>
+        </div>
+
+        <div class="score-section">
+            <div class="points">
+                <h2>Score</h1>
+                <p class="score-3">0 sec</p>
+            </div>
+        </div>
+
+        <div class="other-sections">
+            <button class="mainMenuButton">main menu</button>
+            <button class="restartButton">restart</button>
+            <button class="rulesButton">Rules</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

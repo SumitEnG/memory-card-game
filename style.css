@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* resets */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+/* used  classes */
+
+.main-menu-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/Download\ Dark\ poker\ symbols\ background\,\ card\ signs\ background\,\ abstract\ gambling\ background\ for\ free.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.inside-container{
+    background-color: rgba(15, 15, 15, 0.6);
+    text-align: center;
+    width:550px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    border-radius: 4px;
+    box-shadow: 0 0 8px white;
+}
+
+.playing-btns{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.playing-btns>button{
+    background-color: rgb(19, 19, 244);
+    color: white;
+    font-weight: 700;
+    padding-block: 4px;
+    padding-inline: 12px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.playing-btns>button:hover{
+    background-color: rgb(80, 80, 215);
+}
+
+.container{
+    width:100vw;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* transition: 0.8s ease; */
+    top: 0;
+    left: -100%;
+}
+
+.container.visibility{
+    left:0;
+}
+
+.box-container {
+    height:70%;
+    width:27%;
+    background-color: #E8E8E8;
+    border-radius: 2px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.view{
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: all 0.8s;
+    backface-visibility: hidden;
+    overflow: hidden; 
+}
+
+
+.front{
+    width: 100%;
+    height: 100%;
+}
+.front>img{
+    width: 100%;
+    height: 100%;
+}
+
+.back{
+    width: 100%;
+    height: 100%;
+    background-color: aqua; 
+    transform: rotateY(-180deg);
+}
+
+.back>img{
+    width: 100%;
+    height: 100%;
+}
+
+.box.flip .front{
+    transform: rotateY(180deg);
+}
+
+.box.flip .back{
+    transform: rotateY(0deg);
+}
+
+.box.shake{
+    animation : shake 0.5s linear 
+}
+
+@keyframes shake {
+    0%,100% {
+        transform: translateX(0);
+    }
+
+    20%{
+        transform: translateX(-14px);
+    }
+
+    40%{
+        transform: translateX(14px);
+    }
+
+    60%{
+        transform: translateX(-8px);
+    }
+
+    80%{
+        transform: translateX(8px);
+    }
+}
+
+.win-msg{
+    width: 40vw;
+    background-color: #f7f1f1;
+    color: rgb(11, 131, 11);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 20px;
+    padding-inline: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px gray;
+    transform: scale(0);
+    transition: all 0.4s ease-in;
+    transition-delay: 0.5s;
+}
+
+.win-msg h1{
+    text-align: center;
+}
+
+.win-msg p{
+    text-align: center;
+}
+
+.win-msg button{
+    background-color: green;
+    color: white;
+    font-weight: 700;
+    padding-block: 4px;
+    padding-inline: 12px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.win-msg button:hover{
+    background-color: rgb(59, 187, 59);
+}
+
+.win-btns{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    padding-block: 20px;
+}
+
+.win-msg.active{
+    transform: scale(1);
+}
+
+.lost-msg{
+    width: 40vw;
+    background-color: #f7f1f1;
+    color: rgb(253, 3, 3);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 20px;
+    padding-inline: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px gray;
+    transform: scale(0);
+    transition: all 0.4s ease-in;
+    transition-delay: 0.5s;
+}
+
+.lost-msg h1{
+    text-align: center;
+}
+
+.lost-msg p{
+    text-align: center;
+}
+
+.lost-msg button{
+    background-color: rgb(253, 3, 3);
+    color: white;
+    font-weight: 700;
+    padding-block: 4px;
+    padding-inline: 12px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.lost-msg button:hover{
+    background-color: rgb(246, 75, 75);
+}
+
+.lost-btns{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    padding-block: 20px;
+}
+
+.lost-msg.active{
+    transform: scale(1);
+}
+
+.other-sections{
+    display: flex;
+    gap:20px
+}
+
+.other-sections button{
+    background-color: rgb(149, 149, 6);
+    color: white;
+    font-weight: 700;
+    padding-block: 4px;
+    padding-inline: 16px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.other-sections button:hover{
+    background-color: rgb(200, 200, 74);
+}
+
+.highest-score{
+    text-align: center;
+    position: absolute;
+    top:5%;
+    left:5%;
+}
+
+.points{
+    text-align: center;
+    position: absolute;
+    top:5%;
+    right:5%;
+}
+
+.timer{
+    display: flex;
+    gap:20px;
+    background-color: #E8E8E8;
+    width:25%;
+    justify-content: center;
+    color: #000000;
+    border-radius: 2px;
+}

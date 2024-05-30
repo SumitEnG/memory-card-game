@@ -1,0 +1,142 @@
+@media screen and (max-width: 1245px) {
+    .container{
+        left:-200%;
+     }
+    .box-container {
+       height:70%;
+       width:30%;
+    }
+}
+
+@media screen and (max-width: 999px) {
+     .box-container {
+        height:60%;
+        width:30%;
+     }
+
+     .timer {
+        width: 30%;
+        justify-content: center;
+     }
+
+     .other-sections {
+        width: 40%;
+        justify-content: center;
+     }
+    
+    .other-sections button{
+        font-weight: 600;
+        padding-block: 4px;
+        padding-inline: 12px;
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+        border-radius: 4px;
+    }
+}
+
+@media screen and (max-width: 899px){
+    .box-container {
+        height:60%;
+        width:42%;
+     }
+     .timer {
+        width: 40%;
+     }
+} 
+
+@media screen and (max-width: 699px){
+    .box-container {
+        height:60%;
+        width:45%;
+     }
+
+     .other-sections {
+        width: 45%;
+        justify-content: center;
+     }
+
+     .other-sections button{
+        font-weight: 500;
+        padding-block: 4px;
+        padding-inline: 12px;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        border-radius: 4px;
+    }
+
+    .inside-container{
+        width: 60vw;
+    }
+
+    .playing-btns button{
+        width:80%;
+    }
+
+} 
+
+@media screen and (max-width: 599px){
+    .box-container {
+        height:50%;
+        width:50%;
+     }
+
+     .other-sections {
+        width: 50%;
+        justify-content: center;
+     }
+
+     .other-sections button{
+        font-weight: 500;
+        padding-block: 4px;
+        padding-inline: 12px;
+        font-size: 1rem;
+        line-height: 1rem;
+        border-radius: 4px;
+    }
+    .container{
+        width: 100vw;
+        left:-300%;
+     }
+
+     .main-menu-container{
+        overflow: hidden;
+     }
+     .timer {
+        width: 50%;
+     }
+
+} 
+
+
+@media screen and (max-width: 499px){
+    .box-container{
+        width: 60vw;
+    }
+    .other-sections {
+        width: 60%;
+     }
+
+     .timer {
+        width: 60%;
+        justify-content: center;
+     }
+     .inside-container{
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 399px){
+    .box-container{
+        width: 73vw;
+    }
+    .other-sections {
+        width: 70%;
+     }
+     .timer {
+        width: 70%;
+        justify-content: center;
+     }
+     .inside-container{
+        width: 90vw;
+    }
+}
