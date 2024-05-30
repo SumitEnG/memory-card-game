@@ -6,6 +6,15 @@
        height:70%;
        width:30%;
     }
+    .win-msg{
+        width: 45vw;
+        padding-inline: 40px;
+    }
+    .lost-msg{
+        width: 45vw;
+        padding-inline: 40px;
+    }
+    
 }
 
 @media screen and (max-width: 999px) {
@@ -32,6 +41,35 @@
         line-height: 1.2rem;
         border-radius: 4px;
     }
+    
+    .win-msg h1{
+        font-size: 2rem;
+    }
+    
+    .win-msg p{
+        font-size: 1rem;
+    }
+    
+    .win-msg button{
+        font-weight: 600;
+        padding-inline: 10px;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
+    .lost-msg h1{
+        font-size: 2rem;
+    }
+    
+    .lost-msg p{
+        font-size: 1rem;
+    }
+    
+    .lost-msg button{
+        font-weight: 600;
+        padding-inline: 10px;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 899px){
@@ -42,6 +80,14 @@
      .timer {
         width: 40%;
      }
+     .win-msg{
+        width: 50vw;
+        padding-inline: 12px;
+    }
+    .lost-msg{
+        width: 50vw;
+        padding-inline: 12px;
+    }
 } 
 
 @media screen and (max-width: 699px){
@@ -70,6 +116,14 @@
 
     .playing-btns button{
         width:80%;
+    }
+
+    .win-msg{
+        width: 60vw;
+    }
+
+    .lost-msg{
+        width: 60vw;
     }
 
 } 
@@ -105,6 +159,35 @@
         width: 50%;
      }
 
+     .win-msg h1{
+        font-size: 1.8rem;
+    }
+    
+    .win-msg p{
+        font-size: 1rem;
+    }
+    
+    .win-msg button{
+        font-weight: 400;
+        padding-inline: 10px;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .lost-msg h1{
+        font-size: 1.8rem;
+    }
+    
+    .lost-msg p{
+        font-size: 1rem;
+    }
+    
+    .lost-msg button{
+        font-weight: 400;
+        padding-inline: 10px;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
 } 
 
 
@@ -123,11 +206,43 @@
      .inside-container{
         width: 80vw;
     }
+    .win-msg{
+        width: 70vw;
+    }
+    .win-msg h1{
+        font-size: 1.5rem;
+    }
+    
+    .win-msg p{
+        font-size: 1rem;
+    }
+    
+    .win-msg button{
+        font-weight: 400;
+        padding-inline: 8px;
+        font-size: 0.9rem;
+    }
+    .lost-msg{
+        width: 70vw;
+    }
+    .lost-msg h1{
+        font-size: 1.5rem;
+    }
+    
+    .lost-msg p{
+        font-size: 1rem;
+    }
+    
+    .lost-msg button{
+        font-weight: 400;
+        padding-inline: 8px;
+        font-size: 0.9rem;
+    }
 }
 
 @media screen and (max-width: 399px){
     .box-container{
-        width: 73vw;
+        width: 75vw;
     }
     .other-sections {
         width: 70%;
@@ -138,5 +253,11 @@
      }
      .inside-container{
         width: 90vw;
+    }
+    .win-msg{
+        width: 80vw;
+    }
+    .lost-msg{
+        width: 80vw;
     }
 }
